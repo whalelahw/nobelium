@@ -7,14 +7,16 @@
 .notion,
 .notion-text,
 .notion-quote,
-@@ -12,6 +13,7 @@
+.notion-h-title {
+  @apply leading-8;
   @apply p-0;
   @apply my-3;
 }
 .notion-page-link {
   color: inherit;
 }
-@@ -20,7 +22,7 @@ svg.notion-page-icon {
+
+svg.notion-page-icon {
   @apply hidden;
 }
 
@@ -22,7 +24,11 @@ svg + .notion-page-title-text {
   @apply border-b-0;
 }
 
-@@ -32,14 +34,14 @@ svg + .notion-page-title-text {
+.notion-bookmark {
+  @apply border;
+  @apply border-gray-100;
+  color: inherit;
+}
 
 .notion-bookmark .notion-bookmark-title,
 .notion-bookmark .notion-bookmark-link div {
@@ -37,7 +43,10 @@ svg + .notion-page-title-text {
   @apply text-gray-900;
 }
 
-@@ -50,23 +52,41 @@ pre[class*='language-'] {
+pre[class*='language-'] {
+  line-height: inherit;
+}
+
 .notion-bookmark:hover {
   @apply border-blue-400;
 }
@@ -61,12 +70,3 @@ svg + .notion-page-title-text {
 .notion-collection-row {
   @apply hidden;
 }
-.notion-text {
-  margin: 0;
-}
-.notion-h {
-  margin: 0;
-}
-.notion-column {
-  margin: 0;
-} 
